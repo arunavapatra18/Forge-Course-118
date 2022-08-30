@@ -1,5 +1,6 @@
 package dev.arunava.mccourse;
 
+import dev.arunava.mccourse.block.ModBlocks;
 import dev.arunava.mccourse.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,6 +26,8 @@ public class MCCourseMod
         // Registering the list of items
         ModItems.register(eventBus);
 
+        // Registering the list of blocks
+        ModBlocks.register(eventBus);
         eventBus.addListener(this::setup);
 
         // Register ourselves for server and other game events we are interested in
