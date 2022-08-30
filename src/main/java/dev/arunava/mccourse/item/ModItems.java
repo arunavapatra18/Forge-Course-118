@@ -1,5 +1,6 @@
-package dev.arunava.mccourse;
+package dev.arunava.mccourse.item;
 
+import dev.arunava.mccourse.MCCourseMod;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
