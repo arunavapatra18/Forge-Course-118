@@ -7,6 +7,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.checkerframework.checker.units.qual.C;
+import org.lwjgl.system.CallbackI;
 
 // Template that a lot of classes are going to follow
 public class ModItems {
@@ -30,6 +32,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     public static final RegistryObject<Item> COBALT_NUGGET = ITEMS.register("cobalt_nugget",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> RAW_COBALT = ITEMS.register("raw_cobalt",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     /*

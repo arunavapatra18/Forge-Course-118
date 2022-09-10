@@ -21,7 +21,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MCCourseMod.MOD_ID);
 
-    // Add items
+    // Add blocks
     public static final RegistryObject<Block> COBALT_BLOCK = registerBlock("cobalt_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
@@ -30,11 +30,14 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
 
+    public static final RegistryObject<Block> RAW_COBALT_BLOCK = registerBlock("raw_cobalt_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
 
     // Function to register Block
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn, tab);
+        registerBlockItem(name, toReturn, tab); // ADDS THE ITEM FOR THE BLOCK
         return toReturn;
     }
 
