@@ -28,6 +28,7 @@ public class MCCourseMod
 
         // Registering the list of blocks
         ModBlocks.register(eventBus);
+
         eventBus.addListener(this::setup);
 
         // Register ourselves for server and other game events we are interested in
