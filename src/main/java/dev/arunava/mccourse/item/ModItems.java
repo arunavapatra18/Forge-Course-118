@@ -29,12 +29,12 @@ public class ModItems {
         RegistryObject needs to be set.
      */
     public static final RegistryObject<Item> COBALT_INGOT = ITEMS.register("cobalt_ingot",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> COBALT_NUGGET = ITEMS.register("cobalt_nugget",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
     public static final RegistryObject<Item> RAW_COBALT = ITEMS.register("raw_cobalt",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     /*
         This list needs to be registered in minecraft. Its going to be called

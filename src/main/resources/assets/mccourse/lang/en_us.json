@@ -5,5 +5,7 @@
 
   "block.mccourse.cobalt_block": "Cobalt Block",
   "block.mccourse.cobalt_ore": "Cobalt Ore",
-  "block.mccourse.raw_cobalt_block": "Raw Cobalt Block"
+  "block.mccourse.raw_cobalt_block": "Raw Cobalt Block",
+
+  "itemGroup.coursemodtab": "MCCourse Mod"
 }

@@ -1,6 +1,7 @@
 package dev.arunava.mccourse.block;
 
 import dev.arunava.mccourse.MCCourseMod;
+import dev.arunava.mccourse.item.ModCreativeModeTab;
 import dev.arunava.mccourse.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -24,15 +25,15 @@ public class ModBlocks {
     // Add blocks
     public static final RegistryObject<Block> COBALT_BLOCK = registerBlock("cobalt_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> COBALT_ORE = registerBlock("cobalt_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> RAW_COBALT_BLOCK = registerBlock("raw_cobalt_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     // Function to register Block
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
